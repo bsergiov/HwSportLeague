@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bNJ-ca-pp4">
->>>>>>> Sergey
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -12,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HwSportLeague" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,51 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="circle.grid.cross.fill" catalog="system" id="kJ0-f3-cam"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="-23.188405797101453" y="53.571428571428569"/>
         </scene>
     </scenes>
     <resources>
-=======
-            <point key="canvasLocation" x="918.84057971014499" y="79.6875"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="E1h-fr-IwH">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bNJ-ca-pp4" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xtU-3P-IM9">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SH9-Z2-MuC"/>
-                        <segue destination="ch4-Zh-peU" kind="relationship" relationship="viewControllers" id="U6L-8i-Q55"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xMG-Dx-32F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8.6956521739130448" y="79.6875"/>
-        </scene>
-        <!--StandingViewController-->
-        <scene sceneID="jEr-f5-REf">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SergeyStoryboard" referencedIdentifier="StandingViewController" id="ch4-Zh-peU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Standing" image="crown.fill" catalog="system" id="LI4-MN-C1p"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JoZ-Ud-EOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="508" y="516"/>
-        </scene>
-    </scenes>
-    <resources>
-        <image name="circle.grid.cross.fill" catalog="system" width="128" height="125"/>
-        <image name="crown.fill" catalog="system" width="128" height="92"/>
->>>>>>> Sergey
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
