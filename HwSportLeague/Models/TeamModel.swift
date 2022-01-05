@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct TeamModel {
+    
+    // MARK: - Public Properties
+    let nameTeam: String
+    let logoTeam: String
+    let cityTeam: String
+    let stadionTeam: String
+    
+}
+

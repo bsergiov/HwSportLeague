@@ -17,6 +17,10 @@
 		CC8353C42785880B007EE4E3 /* TeamDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353C32785880B007EE4E3 /* TeamDataManager.swift */; };
 		CC8353C627858825007EE4E3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CC8353C527858825007EE4E3 /* .gitignore */; };
 		CC8353C82785885F007EE4E3 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = CC8353C72785885F007EE4E3 /* .gitattributes */; };
+		CC8353CC2785C9D1007EE4E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353CB2785C9D1007EE4E3 /* MainViewController.swift */; };
+		CC8353CE2785C9FF007EE4E3 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353CD2785C9FF007EE4E3 /* TeamTableViewCell.swift */; };
+		CC8353D02785CA15007EE4E3 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353CF2785CA14007EE4E3 /* GameTableViewCell.swift */; };
+		CC8353D22785CC38007EE4E3 /* SergeyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353D12785CC37007EE4E3 /* SergeyStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		CC8353C32785880B007EE4E3 /* TeamDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManager.swift; sourceTree = "<group>"; };
 		CC8353C527858825007EE4E3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CC8353C72785885F007EE4E3 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		CC8353CB2785C9D1007EE4E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CC8353CD2785C9FF007EE4E3 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		CC8353CF2785CA14007EE4E3 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		CC8353D12785CC37007EE4E3 /* SergeyStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SergeyStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 		CC8353BC2785876E007EE4E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC8353C92785C990007EE4E3 /* Main */,
 				CC8353AB27858702007EE4E3 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -99,6 +108,7 @@
 			children = (
 				CC8353AD27858702007EE4E3 /* Main.storyboard */,
 				CC8353B227858704007EE4E3 /* LaunchScreen.storyboard */,
+				CC8353D12785CC37007EE4E3 /* SergeyStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -125,6 +135,24 @@
 				CC8353C32785880B007EE4E3 /* TeamDataManager.swift */,
 			);
 			path = DataMangers;
+			sourceTree = "<group>";
+		};
+		CC8353C92785C990007EE4E3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC8353CA2785C9A0007EE4E3 /* CustomCells */,
+				CC8353CB2785C9D1007EE4E3 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CC8353CA2785C9A0007EE4E3 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				CC8353CD2785C9FF007EE4E3 /* TeamTableViewCell.swift */,
+				CC8353CF2785CA14007EE4E3 /* GameTableViewCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8353D22785CC38007EE4E3 /* SergeyStoryboard.storyboard in Resources */,
 				CC8353C82785885F007EE4E3 /* .gitattributes in Resources */,
 				CC8353C627858825007EE4E3 /* .gitignore in Resources */,
 				CC8353B427858704007EE4E3 /* LaunchScreen.storyboard in Resources */,
@@ -203,8 +232,11 @@
 				CC8353AC27858702007EE4E3 /* ViewController.swift in Sources */,
 				CC8353A827858702007EE4E3 /* AppDelegate.swift in Sources */,
 				CC8353C1278587CE007EE4E3 /* TeamModel.swift in Sources */,
+				CC8353CC2785C9D1007EE4E3 /* MainViewController.swift in Sources */,
+				CC8353CE2785C9FF007EE4E3 /* TeamTableViewCell.swift in Sources */,
 				CC8353C42785880B007EE4E3 /* TeamDataManager.swift in Sources */,
 				CC8353AA27858702007EE4E3 /* SceneDelegate.swift in Sources */,
+				CC8353D02785CA15007EE4E3 /* GameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
