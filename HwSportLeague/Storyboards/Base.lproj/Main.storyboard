@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HwSportLeague" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="kJ0-f3-cam"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="circle.grid.cross.fill" catalog="system" id="kJ0-f3-cam"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,11 +42,11 @@
             </objects>
             <point key="canvasLocation" x="8.6956521739130448" y="79.6875"/>
         </scene>
-        <!--SergeyStoryboard-->
+        <!--StandingViewController-->
         <scene sceneID="jEr-f5-REf">
             <objects>
-                <viewControllerPlaceholder storyboardName="SergeyStoryboard" id="ch4-Zh-peU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LI4-MN-C1p"/>
+                <viewControllerPlaceholder storyboardName="SergeyStoryboard" referencedIdentifier="StandingViewController" id="ch4-Zh-peU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Standing" image="crown.fill" catalog="system" id="LI4-MN-C1p"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JoZ-Ud-EOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,6 +54,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle.grid.cross.fill" catalog="system" width="128" height="125"/>
+        <image name="crown.fill" catalog="system" width="128" height="92"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

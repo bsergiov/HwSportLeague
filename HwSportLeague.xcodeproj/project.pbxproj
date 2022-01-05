@@ -21,6 +21,7 @@
 		CC8353CE2785C9FF007EE4E3 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353CD2785C9FF007EE4E3 /* TeamTableViewCell.swift */; };
 		CC8353D02785CA15007EE4E3 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353CF2785CA14007EE4E3 /* GameTableViewCell.swift */; };
 		CC8353D22785CC38007EE4E3 /* SergeyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353D12785CC37007EE4E3 /* SergeyStoryboard.storyboard */; };
+		CC8353D52785DF83007EE4E3 /* StandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353D42785DF83007EE4E3 /* StandingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CC8353CD2785C9FF007EE4E3 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		CC8353CF2785CA14007EE4E3 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		CC8353D12785CC37007EE4E3 /* SergeyStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SergeyStoryboard.storyboard; sourceTree = "<group>"; };
+		CC8353D42785DF83007EE4E3 /* StandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		CC8353BC2785876E007EE4E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC8353D32785DF5A007EE4E3 /* Standing */,
 				CC8353C92785C990007EE4E3 /* Main */,
 				CC8353AB27858702007EE4E3 /* ViewController.swift */,
 			);
@@ -153,6 +156,14 @@
 				CC8353CF2785CA14007EE4E3 /* GameTableViewCell.swift */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		CC8353D32785DF5A007EE4E3 /* Standing */ = {
+			isa = PBXGroup;
+			children = (
+				CC8353D42785DF83007EE4E3 /* StandingViewController.swift */,
+			);
+			path = Standing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 				CC8353CE2785C9FF007EE4E3 /* TeamTableViewCell.swift in Sources */,
 				CC8353C42785880B007EE4E3 /* TeamDataManager.swift in Sources */,
 				CC8353AA27858702007EE4E3 /* SceneDelegate.swift in Sources */,
+				CC8353D52785DF83007EE4E3 /* StandingViewController.swift in Sources */,
 				CC8353D02785CA15007EE4E3 /* GameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
