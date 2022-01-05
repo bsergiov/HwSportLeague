@@ -24,6 +24,7 @@
 		CC8353D727863C00007EE4E3 /* SergeyStoryboards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */; };
 		CC8353DB27863E08007EE4E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353DA27863E08007EE4E3 /* MainViewController.swift */; };
 		CC8353DE27863E59007EE4E3 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */; };
+		CC8353E02786408C007EE4E3 /* StandingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353DF2786408C007EE4E3 /* StandingStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SergeyStoryboards.storyboard; sourceTree = "<group>"; };
 		CC8353DA27863E08007EE4E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		CC8353DF2786408C007EE4E3 /* StandingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StandingStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				CC8353B227858704007EE4E3 /* LaunchScreen.storyboard */,
 				59D249802785C3F400B2218F /* DevelopersStoryboard.storyboard */,
 				CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */,
+				CC8353DF2786408C007EE4E3 /* StandingStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				CC8353C627858825007EE4E3 /* .gitignore in Resources */,
 				CC8353B427858704007EE4E3 /* LaunchScreen.storyboard in Resources */,
 				CC8353B127858704007EE4E3 /* Assets.xcassets in Resources */,
+				CC8353E02786408C007EE4E3 /* StandingStoryboard.storyboard in Resources */,
 				CC8353D727863C00007EE4E3 /* SergeyStoryboards.storyboard in Resources */,
 				CC8353AF27858702007EE4E3 /* Main.storyboard in Resources */,
 			);
