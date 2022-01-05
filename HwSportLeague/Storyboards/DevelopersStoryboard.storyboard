@@ -63,7 +63,9 @@
                             <outlet property="delegate" destination="7Xl-rt-XQM" id="dyD-J2-VKB"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Developers" image="person.circle" catalog="system" id="B3t-iz-Wih"/>
                     <navigationItem key="navigationItem" title="Developers" id="LFz-6r-Dqv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUX-1m-agt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,6 +89,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
