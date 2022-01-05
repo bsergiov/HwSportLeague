@@ -23,6 +23,7 @@
 		CC8353C82785885F007EE4E3 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = CC8353C72785885F007EE4E3 /* .gitattributes */; };
 		CC8353D727863C00007EE4E3 /* SergeyStoryboards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */; };
 		CC8353DB27863E08007EE4E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353DA27863E08007EE4E3 /* MainViewController.swift */; };
+		CC8353DE27863E59007EE4E3 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CC8353C72785885F007EE4E3 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SergeyStoryboards.storyboard; sourceTree = "<group>"; };
 		CC8353DA27863E08007EE4E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +182,18 @@
 		CC8353D927863DDF007EE4E3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CC8353DC27863E2D007EE4E3 /* CustomCell */,
 				CC8353DA27863E08007EE4E3 /* MainViewController.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		CC8353DC27863E2D007EE4E3 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				CC8353C1278587CE007EE4E3 /* TeamModel.swift in Sources */,
 				59D249882785CE9800B2218F /* DevelopersListViewController.swift in Sources */,
 				CC8353C42785880B007EE4E3 /* TeamDataManager.swift in Sources */,
+				CC8353DE27863E59007EE4E3 /* TeamTableViewCell.swift in Sources */,
 				CC8353DB27863E08007EE4E3 /* MainViewController.swift in Sources */,
 				59D2498F2785D01500B2218F /* DeveloperModel.swift in Sources */,
 				CC8353AA27858702007EE4E3 /* SceneDelegate.swift in Sources */,
