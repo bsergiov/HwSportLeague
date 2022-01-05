@@ -22,6 +22,7 @@
 		CC8353C627858825007EE4E3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CC8353C527858825007EE4E3 /* .gitignore */; };
 		CC8353C82785885F007EE4E3 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = CC8353C72785885F007EE4E3 /* .gitattributes */; };
 		CC8353D727863C00007EE4E3 /* SergeyStoryboards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */; };
+		CC8353DB27863E08007EE4E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353DA27863E08007EE4E3 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CC8353C527858825007EE4E3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CC8353C72785885F007EE4E3 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SergeyStoryboards.storyboard; sourceTree = "<group>"; };
+		CC8353DA27863E08007EE4E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		CC8353BC2785876E007EE4E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC8353D927863DDF007EE4E3 /* Main */,
 				59D249822785C5CB00B2218F /* DevelopersViewControllers */,
 				CC8353AB27858702007EE4E3 /* ViewController.swift */,
 			);
@@ -172,6 +175,14 @@
 				CC8353C0278587CE007EE4E3 /* TeamModel.swift */,
 			);
 			path = TeamModel;
+			sourceTree = "<group>";
+		};
+		CC8353D927863DDF007EE4E3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC8353DA27863E08007EE4E3 /* MainViewController.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				CC8353C1278587CE007EE4E3 /* TeamModel.swift in Sources */,
 				59D249882785CE9800B2218F /* DevelopersListViewController.swift in Sources */,
 				CC8353C42785880B007EE4E3 /* TeamDataManager.swift in Sources */,
+				CC8353DB27863E08007EE4E3 /* MainViewController.swift in Sources */,
 				59D2498F2785D01500B2218F /* DeveloperModel.swift in Sources */,
 				CC8353AA27858702007EE4E3 /* SceneDelegate.swift in Sources */,
 			);
