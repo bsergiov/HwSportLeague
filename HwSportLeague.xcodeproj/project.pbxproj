@@ -21,6 +21,7 @@
 		CC8353C42785880B007EE4E3 /* TeamDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353C32785880B007EE4E3 /* TeamDataManager.swift */; };
 		CC8353C627858825007EE4E3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CC8353C527858825007EE4E3 /* .gitignore */; };
 		CC8353C82785885F007EE4E3 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = CC8353C72785885F007EE4E3 /* .gitattributes */; };
+		CC8353D727863C00007EE4E3 /* SergeyStoryboards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CC8353C32785880B007EE4E3 /* TeamDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManager.swift; sourceTree = "<group>"; };
 		CC8353C527858825007EE4E3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CC8353C72785885F007EE4E3 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SergeyStoryboards.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				CC8353AD27858702007EE4E3 /* Main.storyboard */,
 				CC8353B227858704007EE4E3 /* LaunchScreen.storyboard */,
 				59D249802785C3F400B2218F /* DevelopersStoryboard.storyboard */,
+				CC8353D627863C00007EE4E3 /* SergeyStoryboards.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				CC8353C627858825007EE4E3 /* .gitignore in Resources */,
 				CC8353B427858704007EE4E3 /* LaunchScreen.storyboard in Resources */,
 				CC8353B127858704007EE4E3 /* Assets.xcassets in Resources */,
+				CC8353D727863C00007EE4E3 /* SergeyStoryboards.storyboard in Resources */,
 				CC8353AF27858702007EE4E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
