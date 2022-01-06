@@ -25,6 +25,7 @@
 		CC8353DE27863E59007EE4E3 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */; };
 		CC8353E02786408C007EE4E3 /* StandingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8353DF2786408C007EE4E3 /* StandingStoryboard.storyboard */; };
 		CC8353E327864538007EE4E3 /* StandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353E227864538007EE4E3 /* StandingViewController.swift */; };
+		CC8353E52786CE39007EE4E3 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8353E42786CE39007EE4E3 /* GameTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		CC8353DF2786408C007EE4E3 /* StandingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StandingStoryboard.storyboard; sourceTree = "<group>"; };
 		CC8353E227864538007EE4E3 /* StandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingViewController.swift; sourceTree = "<group>"; };
+		CC8353E42786CE39007EE4E3 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				CC8353DD27863E59007EE4E3 /* TeamTableViewCell.swift */,
+				CC8353E42786CE39007EE4E3 /* GameTableViewCell.swift */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				59D249882785CE9800B2218F /* DevelopersListViewController.swift in Sources */,
 				CC8353C42785880B007EE4E3 /* TeamDataManager.swift in Sources */,
 				CC8353DE27863E59007EE4E3 /* TeamTableViewCell.swift in Sources */,
+				CC8353E52786CE39007EE4E3 /* GameTableViewCell.swift in Sources */,
 				CC8353E327864538007EE4E3 /* StandingViewController.swift in Sources */,
 				CC8353DB27863E08007EE4E3 /* MainViewController.swift in Sources */,
 				59D2498F2785D01500B2218F /* DeveloperModel.swift in Sources */,
