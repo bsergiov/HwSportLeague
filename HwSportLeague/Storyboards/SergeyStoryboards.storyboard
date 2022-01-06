@@ -22,12 +22,15 @@
                                     <segment title="Games"/>
                                     <segment title="Teams"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentControl:" destination="Y6W-OH-hqX" eventType="valueChanged" id="QFe-uJ-Ql9"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-cs-pcJ">
                                 <rect key="frame" x="0.0" y="171" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameTableViewCell" rowHeight="147" id="472-eH-H7o">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameTableViewCell" rowHeight="147" id="472-eH-H7o" customClass="GameTableViewCell" customModule="HwSportLeague" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="472-eH-H7o" id="HuV-L9-FMC">
@@ -86,12 +89,18 @@
                                                 <constraint firstItem="5G2-wc-2fW" firstAttribute="centerY" secondItem="HuV-L9-FMC" secondAttribute="centerY" id="rQk-tN-ize"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="awayNameLabel" destination="FPt-yV-pfq" id="7lY-Ac-0ql"/>
+                                            <outlet property="homeNameLabel" destination="P0l-CS-Y7R" id="zTi-tw-c42"/>
+                                            <outlet property="logoAwayImagView" destination="ADh-X6-l12" id="a7P-eP-qyO"/>
+                                            <outlet property="logoHomeImagView" destination="bHW-qt-67D" id="hAI-Ra-KqL"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamTableViewCell" id="cL7-Ri-QPN">
-                                        <rect key="frame" x="0.0" y="191.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamTableViewCell" rowHeight="68" id="cL7-Ri-QPN">
+                                        <rect key="frame" x="0.0" y="191.5" width="414" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cL7-Ri-QPN" id="1ht-Xt-rUf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

@@ -9,15 +9,16 @@ import UIKit
 
 class GameTableViewCell: UITableViewCell {
 
+    // MARK: - IB Outlets
+    @IBOutlet weak var logoHomeImagView: UIImageView!
+    @IBOutlet weak var logoAwayImagView: UIImageView!
+    
+    @IBOutlet weak var homeNameLabel: UILabel!
+    @IBOutlet weak var awayNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
     }
 
 }
