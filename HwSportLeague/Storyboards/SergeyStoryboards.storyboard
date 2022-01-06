@@ -15,15 +15,64 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vjA-Op-8xe">
+                                <rect key="frame" x="20" y="120" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Games"/>
+                                    <segment title="Teams"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-cs-pcJ">
+                                <rect key="frame" x="0.0" y="171" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameScreenCell" id="472-eH-H7o">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="472-eH-H7o" id="HuV-L9-FMC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamScreenCell" id="cL7-Ri-QPN">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cL7-Ri-QPN" id="1ht-Xt-rUf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="England Premier League" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6T-zG-aKX">
+                                <rect key="frame" x="20" y="64" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vjA-Op-8xe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9Jc-hT-bhx"/>
+                            <constraint firstItem="w6T-zG-aKX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="BjM-V3-fQA"/>
+                            <constraint firstItem="DcC-cs-pcJ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Im3-wP-9vY"/>
+                            <constraint firstItem="vjA-Op-8xe" firstAttribute="top" secondItem="w6T-zG-aKX" secondAttribute="bottom" constant="20" id="Kig-De-X8u"/>
+                            <constraint firstAttribute="bottom" secondItem="DcC-cs-pcJ" secondAttribute="bottom" id="VVR-uR-EaC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vjA-Op-8xe" secondAttribute="trailing" constant="20" id="Wzf-dl-5hK"/>
+                            <constraint firstItem="DcC-cs-pcJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fMH-9X-gRL"/>
+                            <constraint firstItem="DcC-cs-pcJ" firstAttribute="top" secondItem="vjA-Op-8xe" secondAttribute="bottom" constant="20" id="hFc-Bg-bLQ"/>
+                            <constraint firstItem="w6T-zG-aKX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="vIO-4D-V3m"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="w6T-zG-aKX" secondAttribute="trailing" constant="20" id="yWh-Kt-nn2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="cx3-fs-gsQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="94"/>
+            <point key="canvasLocation" x="13.043478260869566" y="93.75"/>
         </scene>
     </scenes>
     <resources>
