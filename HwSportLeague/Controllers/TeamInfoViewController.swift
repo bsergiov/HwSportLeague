@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StandingViewController: UIViewController {
+class TeamInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
