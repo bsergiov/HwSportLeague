@@ -8,22 +8,19 @@
 import UIKit
 
 class TeamInfoViewController: UIViewController {
-
+    @IBOutlet var logoTeamImageView: UIImageView!
+    @IBOutlet var cityTeamLabel: UILabel!
+    @IBOutlet var stadionTeamLabel: UILabel!
+    
+    var team: Standing!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        navigationItem.title = team.nameTeam
+        logoTeamImageView.image = UIImage(named: team.nameTeam)
+        cityTeamLabel.text = "City: \(team.cityTeam)"
+        stadionTeamLabel.text = "Stadion: \(team.stadionTeam)"
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

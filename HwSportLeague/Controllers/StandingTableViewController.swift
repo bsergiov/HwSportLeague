@@ -30,11 +30,12 @@ class StandingTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "standingCell", for: indexPath) as! StandingTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "standingCell",
+                                                 for: indexPath) as! StandingTableViewCell
         
         let team = teams[indexPath.row]
 
-        cell.teamNameLabel.text = "\(team.nameTeam), \(team.cityTeam)"
+        cell.teamNameLabel.text = team.nameTeam
         cell.pointsLabel.text = String(team.pointsTeam)
         cell.gamesLabel.text = String(team.gamesTeam)
         cell.winsLabel.text = String(team.winsTeam)
@@ -79,14 +80,16 @@ class StandingTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let teamInfoVC = segue.destination as? TeamInfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let team = teams[indexPath.row]
+        
+        teamInfoVC.team = team
     }
-    */
+    
 
 }

@@ -21,16 +21,17 @@ extension Standing {
         
         var teams: [Standing] = []
         
-        for team in TeamDataManager.teams.shuffled() {
+        for team in TeamDataManager.teams {
             let standing = Standing(nameTeam: team,
                                     cityTeam: TeamDataManager.cityTeams[team] ?? "",
                                     stadionTeam: TeamDataManager.venueTeam[team] ?? "",
-                                    gamesTeam: Int.random(in: 0...38),
+                                    gamesTeam: 38,
                                     winsTeam: Int.random(in: 0...38),
-                                    pointsTeam: Int.random(in: 0...38))
+                                    pointsTeam: Int.random(in: 50...120))
             teams.append(standing)
         }
-        return teams
+        let sortedTeams = teams.sorted(by: { $0.pointsTeam > $1.pointsTeam })
+        return sortedTeams
     }
 }
 
