@@ -8,6 +8,8 @@
 import UIKit
 
 class StandingTableViewController: UITableViewController {
+    
+    let teams = Standing.getTeam()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,21 +23,22 @@ class StandingTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 2
+        teams.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "standingCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "standingCell", for: indexPath) as! StandingTableViewCell
+        
+        let team = teams[indexPath.row]
 
-        // Configure the cell...
+        cell.teamNameLabel.text = "\(team.nameTeam), \(team.cityTeam)"
+        cell.pointsLabel.text = String(team.pointsTeam)
+        cell.gamesLabel.text = String(team.gamesTeam)
+        cell.winsLabel.text = String(team.winsTeam)
+        cell.logoTeamImageView.image = UIImage(named: team.nameTeam)
 
         return cell
     }

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="standingCell" rowHeight="90" id="dZe-Mt-PGS">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="standingCell" rowHeight="90" id="dZe-Mt-PGS" customClass="StandingTableViewCell" customModule="HwSportLeague" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dZe-Mt-PGS" id="OMW-Ah-2ld">
@@ -118,6 +118,14 @@
                                         <constraint firstItem="erl-gG-bdT" firstAttribute="top" secondItem="OMW-Ah-2ld" secondAttribute="topMargin" constant="7.5" id="wit-nD-SI6"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gamesLabel" destination="YDG-Xa-hIi" id="8Ce-xr-wDe"/>
+                                    <outlet property="logoTeamImageView" destination="wwh-rR-JRY" id="4KT-Zs-pKr"/>
+                                    <outlet property="pointsLabel" destination="VLl-nm-Fsr" id="G5r-C5-t4d"/>
+                                    <outlet property="teamNameLabel" destination="wrP-RA-Gou" id="Wax-n2-Qb4"/>
+                                    <outlet property="winsLabel" destination="8c5-OQ-Qej" id="d9e-B3-DKW"/>
+                                    <segue destination="yw1-gc-GAp" kind="show" id="bgM-xJ-8Wq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -132,14 +140,30 @@
             </objects>
             <point key="canvasLocation" x="-680.79999999999995" y="208.24587706146929"/>
         </scene>
+        <!--Team Info View Controller-->
+        <scene sceneID="Ca7-Wf-MWH">
+            <objects>
+                <viewController id="yw1-gc-GAp" customClass="TeamInfoViewController" customModule="HwSportLeague" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g7k-zy-JOF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hhe-3R-yDl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wsg-em-GcN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lD-yW-Buw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="208"/>
+        </scene>
         <!--Standing-->
         <scene sceneID="WGv-1v-MfT">
             <objects>
                 <navigationController storyboardIdentifier="StandingStoryboard" id="0UL-nx-A44" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Standing" image="crown.fill" catalog="system" id="TXB-rc-WOd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="KLf-84-oiu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KLf-84-oiu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -150,26 +174,9 @@
             </objects>
             <point key="canvasLocation" x="-1603" y="209"/>
         </scene>
-        <!--Team Info View Controller-->
-        <scene sceneID="s0d-6b-0kx">
-            <objects>
-                <viewController id="Y6W-OH-hqX" customClass="TeamInfoViewController" customModule="HwSportLeague" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VE5-5h-Dyx"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="185" y="208"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="crown.fill" catalog="system" width="128" height="92"/>
+        <image name="crown.fill" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
