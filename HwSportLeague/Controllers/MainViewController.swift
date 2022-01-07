@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
     // MARK: - Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(GameModel.getGames())
     }
     
 // MARK: - IB Action
