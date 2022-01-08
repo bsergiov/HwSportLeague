@@ -29,8 +29,10 @@ class MainViewController: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
+            mainTableView.rowHeight = 150
             stateTableVeiw = .games
         default:
+            mainTableView.rowHeight = 50
             stateTableVeiw = .teams
         }
         mainTableView.reloadData()
