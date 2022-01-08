@@ -18,15 +18,10 @@ class DevelopersListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "devCell", for: indexPath) as! DevelopersTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "devCell",
+                                                 for: indexPath) as! DevelopersTableViewCell
         
-        let developer = developers[indexPath.row]
-        
-        cell.nameLabel.text = developer.name
-        cell.roleLabel.text = developer.role
-        cell.developerImage.image = UIImage(named: developer.logo)
-        cell.developerImage.layer.cornerRadius = cell.developerImage.frame.size.width / 2
-        cell.developerImage.clipsToBounds = true
+        cell.setupCell(for: developers[indexPath.row])
         
         return cell
     }

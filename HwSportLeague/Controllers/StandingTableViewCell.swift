@@ -15,17 +15,17 @@ class StandingTableViewCell: UITableViewCell {
     @IBOutlet var winsLabel: UILabel!
     @IBOutlet var pointsLabel: UILabel!
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setupCell(for standingModel: Standing?) {
+        
+        guard let standingModel = standingModel else {
+            return
+        }
+
+        teamNameLabel.text = standingModel.nameTeam
+        gamesLabel.text = String(standingModel.gamesTeam)
+        winsLabel.text = String(standingModel.winsTeam)
+        pointsLabel.text = String(standingModel.pointsTeam)
+        logoTeamImageView.image = UIImage(named: standingModel.nameTeam)
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-
 }
