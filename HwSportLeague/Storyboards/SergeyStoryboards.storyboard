@@ -38,7 +38,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zRJ-L7-aKV">
-                                                    <rect key="frame" x="20" y="19.5" width="85.5" height="108.5"/>
+                                                    <rect key="frame" x="20" y="16" width="85.5" height="115"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHW-qt-67D">
                                                             <rect key="frame" x="3" y="0.0" width="80" height="80"/>
@@ -48,7 +48,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HomeTeam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0l-CS-Y7R">
-                                                            <rect key="frame" x="0.0" y="88" width="85.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="88" width="85.5" height="27"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -84,9 +84,10 @@
                                                 <constraint firstItem="yfs-Wc-bZ3" firstAttribute="centerY" secondItem="HuV-L9-FMC" secondAttribute="centerY" id="7VF-mT-KgO"/>
                                                 <constraint firstItem="5G2-wc-2fW" firstAttribute="centerX" secondItem="HuV-L9-FMC" secondAttribute="centerX" id="Gqu-1F-LUL"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="yfs-Wc-bZ3" secondAttribute="trailing" id="JqU-8f-jkl"/>
-                                                <constraint firstItem="zRJ-L7-aKV" firstAttribute="centerY" secondItem="HuV-L9-FMC" secondAttribute="centerY" id="ZaX-LS-fn8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="zRJ-L7-aKV" secondAttribute="bottom" constant="5" id="Ro4-dw-hly"/>
                                                 <constraint firstItem="zRJ-L7-aKV" firstAttribute="leading" secondItem="HuV-L9-FMC" secondAttribute="leadingMargin" id="a23-IG-yPG"/>
                                                 <constraint firstItem="5G2-wc-2fW" firstAttribute="centerY" secondItem="HuV-L9-FMC" secondAttribute="centerY" id="rQk-tN-ize"/>
+                                                <constraint firstItem="zRJ-L7-aKV" firstAttribute="top" secondItem="HuV-L9-FMC" secondAttribute="topMargin" constant="5" id="uM2-ei-zFC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -105,6 +106,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="N8n-0V-c2j"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="5xv-N6-49Y"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="England Premier League" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6T-zG-aKX">
                                 <rect key="frame" x="20" y="64" width="374" height="36"/>
@@ -130,6 +135,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="cx3-fs-gsQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="DcC-cs-pcJ" id="i2k-ya-0Cl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
