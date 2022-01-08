@@ -37,18 +37,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zRJ-L7-aKV">
-                                                    <rect key="frame" x="20" y="16" width="85.5" height="115"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Ll-Jv-IP8">
+                                                    <rect key="frame" x="20" y="16" width="150" height="115"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHW-qt-67D">
-                                                            <rect key="frame" x="3" y="0.0" width="80" height="80"/>
+                                                            <rect key="frame" x="35" y="0.0" width="80" height="80"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="4eg-ju-xJX"/>
                                                                 <constraint firstAttribute="height" constant="80" id="9mp-eh-cA2"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HomeTeam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0l-CS-Y7R">
-                                                            <rect key="frame" x="0.0" y="88" width="85.5" height="27"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HomeTeam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0l-CS-Y7R">
+                                                            <rect key="frame" x="0.0" y="88" width="150" height="27"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="150" id="ZFU-w8-KDG"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -61,18 +64,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yfs-Wc-bZ3">
-                                                    <rect key="frame" x="314" y="19.5" width="80" height="108.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-dC-tOe">
+                                                    <rect key="frame" x="264" y="19.5" width="150" height="108.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ADh-X6-l12">
-                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                            <rect key="frame" x="35" y="0.0" width="80" height="80"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="DFg-ay-LHu"/>
                                                                 <constraint firstAttribute="height" constant="80" id="q2s-uq-0ty"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AwayTeam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPt-yV-pfq">
-                                                            <rect key="frame" x="0.0" y="88" width="80" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AwayTeam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPt-yV-pfq">
+                                                            <rect key="frame" x="0.0" y="88" width="150" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="150" id="caM-Ct-wQF"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -81,13 +87,13 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yfs-Wc-bZ3" firstAttribute="centerY" secondItem="HuV-L9-FMC" secondAttribute="centerY" id="7VF-mT-KgO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4Ll-Jv-IP8" secondAttribute="bottom" constant="5" id="1Dy-nk-Pl1"/>
                                                 <constraint firstItem="5G2-wc-2fW" firstAttribute="centerX" secondItem="HuV-L9-FMC" secondAttribute="centerX" id="Gqu-1F-LUL"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yfs-Wc-bZ3" secondAttribute="trailing" id="JqU-8f-jkl"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="zRJ-L7-aKV" secondAttribute="bottom" constant="5" id="Ro4-dw-hly"/>
-                                                <constraint firstItem="zRJ-L7-aKV" firstAttribute="leading" secondItem="HuV-L9-FMC" secondAttribute="leadingMargin" id="a23-IG-yPG"/>
+                                                <constraint firstItem="4Ll-Jv-IP8" firstAttribute="top" secondItem="HuV-L9-FMC" secondAttribute="topMargin" constant="5" id="TOR-zh-G6c"/>
+                                                <constraint firstItem="7Dq-dC-tOe" firstAttribute="centerY" secondItem="HuV-L9-FMC" secondAttribute="centerY" id="d6V-oK-mf9"/>
+                                                <constraint firstItem="4Ll-Jv-IP8" firstAttribute="leading" secondItem="HuV-L9-FMC" secondAttribute="leadingMargin" id="pep-dL-EV9"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Dq-dC-tOe" secondAttribute="trailing" id="rAK-ln-GJ8"/>
                                                 <constraint firstItem="5G2-wc-2fW" firstAttribute="centerY" secondItem="HuV-L9-FMC" secondAttribute="centerY" id="rQk-tN-ize"/>
-                                                <constraint firstItem="zRJ-L7-aKV" firstAttribute="top" secondItem="HuV-L9-FMC" secondAttribute="topMargin" constant="5" id="uM2-ei-zFC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
