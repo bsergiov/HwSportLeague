@@ -13,16 +13,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     // MARK: - Private Properties
-    let games = GameModel.getGames()
-    let teams = TeamDataManager.teams
+    private let games = GameModel.getGames()
+    private let teams = TeamDataManager.teams
     
-    var stateTableVeiw = StateTableView.games
-    
-    // MARK: - Life Cicle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+    private var stateTableVeiw = StateTableView.games
     
     // MARK: - IB Action
     @IBAction func gamesOrTeamsChanger(_ sender: UISegmentedControl) {
