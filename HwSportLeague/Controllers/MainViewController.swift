@@ -49,7 +49,7 @@ extension MainViewController: UITableViewDataSource, UITabBarDelegate {
         
         if stateTableVeiw == .games {
             let cell = tableView.dequeueReusableCell(withIdentifier: "GameTableViewCell", for: indexPath) as! GameTableViewCell
-            
+           
             cell.gameModel = games[indexPath.row]
             
             cell.setupCell()
