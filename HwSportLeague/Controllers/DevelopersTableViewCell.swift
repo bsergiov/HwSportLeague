@@ -8,10 +8,13 @@
 import UIKit
 
 class DevelopersTableViewCell: UITableViewCell {
+    
+    // MARK: - IB Outlets
     @IBOutlet var developerImage: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var roleLabel: UILabel!
     
+    // MARK: - Public Methods
     func setupCell(for developerModel: Developer?) {
         
         guard let developerModel = developerModel else { return }

@@ -9,12 +9,14 @@ import UIKit
 
 class StandingTableViewCell: UITableViewCell {
     
+    // MARK: IB Outlets
     @IBOutlet var logoTeamImageView: UIImageView!
     @IBOutlet var teamNameLabel: UILabel!
     @IBOutlet var gamesLabel: UILabel!
     @IBOutlet var winsLabel: UILabel!
     @IBOutlet var pointsLabel: UILabel!
     
+    // MARK: Public Methods
     func setupCell(for standingModel: Standing?) {
         
         guard let standingModel = standingModel else {

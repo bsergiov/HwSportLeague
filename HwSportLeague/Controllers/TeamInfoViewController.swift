@@ -8,10 +8,13 @@
 import UIKit
 
 class TeamInfoViewController: UIViewController {
+    
+    // MARK: - IB Outlets
     @IBOutlet var logoTeamImageView: UIImageView!
     @IBOutlet var cityTeamLabel: UILabel!
     @IBOutlet var stadionTeamLabel: UILabel!
     
+    // MARK: Public Properties
     var team: Standing!
     
     override func viewDidLoad() {

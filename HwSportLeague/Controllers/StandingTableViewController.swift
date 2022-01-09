@@ -9,10 +9,11 @@ import UIKit
 
 class StandingTableViewController: UITableViewController {
     
+    // MARK: Private Properties
     let teams = Standing.getTeam()
 
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         teams.count
     }
@@ -27,7 +28,7 @@ class StandingTableViewController: UITableViewController {
     }
     
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let teamInfoVC = segue.destination as? TeamInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }

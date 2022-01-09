@@ -8,6 +8,8 @@
 import Foundation
 
 struct Standing {
+    
+    // MARK: - Public Properties
     let nameTeam: String
     let cityTeam: String
     let stadionTeam: String
@@ -17,6 +19,8 @@ struct Standing {
 }
 
 extension Standing {
+    
+    // MARK: - Static Methods
     static func getTeam() -> [Standing] {
         
         var teams: [Standing] = []
