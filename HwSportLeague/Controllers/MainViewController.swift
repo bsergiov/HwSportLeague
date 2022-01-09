@@ -13,16 +13,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     // MARK: - Private Properties
-    let games = GameModel.getGames()
-    let teams = TeamDataManager.teams
+    private let games = GameModel.getGames()
+    private let teams = TeamDataManager.teams
     
-    var stateTableVeiw = StateTableView.games
-    
-    // MARK: - Life Cicle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+    private var stateTableVeiw = StateTableView.games
     
     // MARK: - IB Action
     @IBAction func gamesOrTeamsChanger(_ sender: UISegmentedControl) {
@@ -55,13 +49,13 @@ extension MainViewController: UITableViewDataSource, UITabBarDelegate {
         
         if stateTableVeiw == .games {
             let cell = tableView.dequeueReusableCell(withIdentifier: "GameTableViewCell", for: indexPath) as! GameTableViewCell
-            
+           
             cell.gameModel = games[indexPath.row]
             
             cell.setupCell()
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath) as! TeamTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath)
             var content = cell.defaultContentConfiguration()
             let team = teams[indexPath.row]
             content.image = UIImage(named: team)
