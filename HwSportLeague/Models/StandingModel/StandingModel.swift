@@ -13,7 +13,7 @@ struct Standing {
     let stadionTeam: String
     let gamesTeam: Int
     let winsTeam: Int
-    let pointsTeam: Int
+    var pointsTeam: Int
 }
 
 extension Standing {
@@ -22,16 +22,25 @@ extension Standing {
         var teams: [Standing] = []
         
         for team in TeamDataManager.teams {
-            let standing = Standing(nameTeam: team,
+            var standing = Standing(nameTeam: team,
                                     cityTeam: TeamDataManager.cityTeams[team] ?? "",
                                     stadionTeam: TeamDataManager.venueTeam[team] ?? "",
                                     gamesTeam: 38,
-                                    winsTeam: Int.random(in: 0...38),
-                                    pointsTeam: Int.random(in: 50...120))
+                                    winsTeam: Int.random(in: 0..<38),
+                                    pointsTeam: 0)
+            standing.pointsTeam = getPoints(for: standing.winsTeam)
             teams.append(standing)
         }
         let sortedTeams = teams.sorted(by: { $0.pointsTeam > $1.pointsTeam })
         return sortedTeams
+    }
+    
+    static private func getPoints(for wins: Int) -> Int {
+        var points = 0
+        for _ in 0..<wins {
+            points = wins * 3
+        }
+        return points
     }
 }
 
