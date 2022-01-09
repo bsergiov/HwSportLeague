@@ -55,7 +55,7 @@ extension MainViewController: UITableViewDataSource, UITabBarDelegate {
             cell.setupCell()
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath) as! TeamTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath)
             var content = cell.defaultContentConfiguration()
             let team = teams[indexPath.row]
             content.image = UIImage(named: team)
