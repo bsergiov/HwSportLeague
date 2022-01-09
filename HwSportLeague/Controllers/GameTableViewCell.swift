@@ -19,6 +19,7 @@ class GameTableViewCell: UITableViewCell {
     // MARK: - Public Properties
     var gameModel: GameModel?
     
+   // MARK: - Public Properties
     func setupCell() {
         
         guard let gameModel = gameModel else { return }
